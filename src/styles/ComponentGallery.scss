@@ -8,13 +8,13 @@
     >.row {
         padding-bottom: 2em;
 
-        >.label {
+        >.row-header {
             padding-bottom: 0.5em;
             font-size: 16pt;
             font-weight: 400;
         }
 
-        >:not(:first-child) {
+        >.row-data {
             display: flex;
             flex-direction: row;
             
@@ -27,17 +27,26 @@
 
 @media only screen and (min-width: 768px) {
     .gallery {
-        padding: 2em;
+        display: table;
+        border-spacing: 1.5em;
 
         >.row {
             text-align: right;
-            display: flex;
-            flex-direction: row;
+            display: table-row;
             align-items: center;
 
-            >.label {
+            >* {
+                display: table-cell;
+            }
+
+            >.row-header {
                 padding-bottom: 0;
-                padding-right: 1.5em;
+                width: 1px;
+                white-space: nowrap;
+            }
+
+            >.row-data {
+                width: 100%;
             }
         }
     }

@@ -14,10 +14,10 @@ function Gallery(props) {
 function GalleryRow(props) {
     return (
         <div className="row">
-            <div className="label">
+            <div className="row-header">
                 {props.label}
             </div>
-            <div>
+            <div className="row-data">
                 {props.children}
             </div>
         </div>
