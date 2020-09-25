@@ -1,10 +1,34 @@
 import React from 'react';
+import { Button } from './Button'
 import './ComponentGallery.scss';
 
-export default function ComponentGallery(props) {
+function Gallery(props) {
     return (
-        <div className="component-gallery">
+        <div className="gallery">
             {props.children}
         </div>
     )
+}
+
+function GalleryRow(props) {
+    return (
+        <div className="row">
+            <div className="label">
+                {props.label}
+            </div>
+            <div>
+                {props.children}
+            </div>
+        </div>
+    );
+}
+
+export default function ComponentGallery(props) {
+    return (
+        <Gallery>
+            <GalleryRow label="Buttons">
+                <Button>Button</Button>
+            </GalleryRow>
+        </Gallery>
+    );
 }
