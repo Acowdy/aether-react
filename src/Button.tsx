@@ -1,15 +1,29 @@
 import React from 'react';
-import './Button.scss';
+import './styles/Button.scss';
 
 export enum ButtonStyle {
-    Primary = "primary",
-    Default = "default",
+    Outline = "outline",
+    Filled = "filled",
+    Flat = "flat",
 }
 
-export function Button(props: {buttonStyle?: ButtonStyle, children?}) {
-    let className = "button";
-    if (props.buttonStyle) {
-        className += " " + props.buttonStyle;
+type ButtonProps = {
+    children?: JSX.Element[] | string,
+    buttonStyle?: ButtonStyle,
+}
+
+export function Button(props: ButtonProps) {
+    let className;
+    switch (props.buttonStyle) {
+        case ButtonStyle.Filled:
+            className = "button-filled";
+            break;
+        case ButtonStyle.Flat:
+            className = "button-flat";
+            break;
+        default:
+            className = "button-outline";
+            break;
     }
     return (
         <button className={className}>

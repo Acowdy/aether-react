@@ -1,0 +1,60 @@
+@import './variables.scss';
+@import './Surface.scss';
+
+@mixin button {
+    font-size: 11pt;
+    display: block;
+    box-sizing: border-box;
+    padding: 0.4em 1em;
+    border-radius: 3px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.button-outline {
+    @include button;
+    color: $color-accent;
+    border: solid 1px transparentize($color: $color-accent, $amount: 0.7);
+
+    &:hover {
+        background-color: transparentize($color: $color-accent, $amount: 0.9);
+    }
+
+    &:active {
+        background-color: transparentize($color: $color-accent, $amount: 0.7);
+        border-color: transparentize($color: $color-accent, $amount: 1);
+    }
+}
+
+.button-filled {
+    @include button;
+    border: none;
+    color: $color-on-accent;
+    background-color: $color-accent;
+
+    &:hover {
+        background-color: lighten($color-accent, 5);
+    }
+
+    &:active {
+        background-color: darken($color-accent, 10);
+    }
+}
+
+.button-flat {
+    @include button;
+    color: $color-accent;
+    border: none;
+
+    &:hover {
+        background-color: transparentize($color: $color-accent, $amount: 0.9);
+    }
+
+    &:active {
+        background-color: transparentize($color: $color-accent, $amount: 0.7);
+    }
+}
+
+.button {
+    @extend .button-outline;
+}

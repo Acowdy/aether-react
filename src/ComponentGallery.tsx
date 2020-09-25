@@ -1,6 +1,6 @@
 import React from 'react';
 import { Button, ButtonStyle } from './Button'
-import './ComponentGallery.scss';
+import './styles/ComponentGallery.scss';
 
 function Gallery(props) {
     return (
@@ -28,7 +28,9 @@ export default function ComponentGallery(props) {
         <Gallery>
             <GalleryRow label="Buttons">
                 <Button>Default</Button>
-                <Button buttonStyle={ButtonStyle.Primary}>Primary</Button>
+                <Button buttonStyle={ButtonStyle.Filled}>Filled</Button>
+                <Button buttonStyle={ButtonStyle.Outline}>Outline</Button>
+                <Button buttonStyle={ButtonStyle.Flat}>Flat</Button>
             </GalleryRow>
         </Gallery>
     );
