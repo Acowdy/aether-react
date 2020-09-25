@@ -1,5 +1,6 @@
 import React from 'react';
 import { Button, ButtonStyle } from './Button'
+import Card from './Card'
 import './styles/ComponentGallery.scss';
 
 function Gallery(props) {
@@ -31,6 +32,9 @@ export default function ComponentGallery(props) {
                 <Button buttonStyle={ButtonStyle.Filled}>Filled</Button>
                 <Button buttonStyle={ButtonStyle.Outline}>Outline</Button>
                 <Button buttonStyle={ButtonStyle.Flat}>Flat</Button>
+            </GalleryRow>
+            <GalleryRow label="Cards">
+                <Card>Hello world!</Card>
             </GalleryRow>
         </Gallery>
     );
