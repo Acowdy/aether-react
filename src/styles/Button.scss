@@ -1,6 +1,6 @@
 @import './variables.scss';
 
-.button {
+@mixin button($color-fg, $color-bg) {
     font-size: 11pt;
     text-transform: uppercase;
     letter-spacing: 0.04em;
@@ -13,8 +13,9 @@
     border-radius: 3px;
     cursor: pointer;
 
-    background-color: $color-surface;
-    color: $color-accent;
+    background-color: $color-bg;
+    color: $color-fg;
+
     border: none;
     box-shadow: 0 1px 3px #0004;
 
@@ -22,19 +23,27 @@
 
     &:hover {
         box-shadow: 0 2px 8px #0004;
-        transform: scale(1.01);
     }
 
     &:active {
         box-shadow: none;
-        color: darken($color-accent, 20);
-
-        // background-color: darken($color-accent, 20);
-        // color: $color-on-accent;
+        color: mix($color-fg, $color-bg, 80);
+        background-color: mix($color-bg, $color-fg, 80);
     }
+}
+
+.button {
+    @include button($color-accent, $color-surface);
+}
+
+.button-primary {
+    @include button($color-on-accent, $color-accent);
+}
+
+.button-danger {
+    @include button($color-danger, $color-surface);
 
     &:focus {
-        outline: solid 3px transparentize($color: $color-accent, $amount: 0.5);
-        -moz-outline-radius: 3px;
+        outline: solid 3px transparentize($color: $color-danger, $amount: 0.5);
     }
 }

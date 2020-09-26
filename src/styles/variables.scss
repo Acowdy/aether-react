@@ -1,7 +1,8 @@
 $color-background: #eef1f5;
-// $color-background: #fff;
 $color-surface: #fff;
 $color-accent: #513ff3;
+$color-danger: #f02f16;
 $color-on-background: #000;
-$color-on-surface: #000;
+$color-on-surface: $color-on-background;
 $color-on-accent: #fff;
+$color-on-danger: $color-on-accent;
