@@ -10,8 +10,15 @@ body {
   -moz-osx-font-smoothing: grayscale;
   background-color: $color-background;
   color: $color-on-background;
-  font-size: 12pt;
   width: 100%;
+}
+
+* {
+  font-size: 12pt;
+  :focus {
+    outline: solid 3px transparentize($color: $color-accent, $amount: 0.5);
+    -moz-outline-radius: 3px;
+  }
 }
 
 code {
