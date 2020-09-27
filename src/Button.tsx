@@ -10,6 +10,7 @@ export enum ButtonStyle {
 type ButtonProps = {
     children?: React.ReactNode,
     buttonStyle?: ButtonStyle,
+    disabled?: boolean,
 }
 
 export function Button(props: ButtonProps) {
@@ -23,7 +24,7 @@ export function Button(props: ButtonProps) {
             break;
     }
     return (
-        <button className={className}>
+        <button className={className} disabled={props.disabled}>
             {props.children}
         </button>
     );

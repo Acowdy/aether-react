@@ -34,6 +34,13 @@
         color: mix($color-fg, $color-bg, 80);
         background-color: mix($color-bg, $color-fg, 80);
     }
+
+    &[disabled] {
+        box-shadow: none;
+        opacity: 0.6;
+        cursor: not-allowed;
+        pointer-events: none;
+    }
 }
 
 .button {

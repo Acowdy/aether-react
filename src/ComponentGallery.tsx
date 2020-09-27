@@ -34,6 +34,9 @@ export default function ComponentGallery(props) {
                 <Button buttonStyle={ButtonStyle.Primary}>Primary</Button>
                 <Button buttonStyle={ButtonStyle.Secondary}>Secondary</Button>
                 <Button buttonStyle={ButtonStyle.Danger}>Danger</Button>
+                <Button buttonStyle={ButtonStyle.Primary} disabled>Disabled</Button>
+                <Button buttonStyle={ButtonStyle.Secondary} disabled>Disabled</Button>
+                <Button buttonStyle={ButtonStyle.Danger} disabled>Disabled</Button>
             </GalleryRow>
             <GalleryRow label="Text inputs">
                 <div style={{maxWidth: "500px"}}>
