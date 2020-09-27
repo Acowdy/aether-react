@@ -42,6 +42,9 @@ export default function ComponentGallery(props) {
                 <div style={{maxWidth: "500px"}}>
                     <TextInput/>
                 </div>
+                <div style={{maxWidth: "500px"}}>
+                    <TextInput disabled/>
+                </div>
             </GalleryRow>
         </Gallery>
     );
