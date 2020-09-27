@@ -8,7 +8,7 @@ export enum ButtonStyle {
 }
 
 type ButtonProps = {
-    children?: JSX.Element[] | string,
+    children?: React.ReactNode,
     buttonStyle?: ButtonStyle,
 }
 

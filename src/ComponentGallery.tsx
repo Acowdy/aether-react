@@ -1,5 +1,5 @@
 import React from 'react';
-import { Button, ButtonStyle } from './Button'
+import { Button, ButtonStyle } from './Button';
 import './styles/ComponentGallery.scss';
 
 function Gallery(props) {
@@ -7,7 +7,7 @@ function Gallery(props) {
         <div className="gallery">
             {props.children}
         </div>
-    )
+    );
 }
 
 function GalleryRow(props) {

@@ -1,8 +1,12 @@
-$color-background: #eef1f5;
+// Colors
+$color-background: #f4f5f9;
 $color-surface: #fff;
-$color-accent: #513ff3;
+$color-accent: #651dff;
+$color-accent-gradient: linear-gradient(-22deg, #1d70ff 0%, #d61dff 100%);
 $color-danger: #f02f16;
 $color-on-background: #000;
 $color-on-surface: $color-on-background;
 $color-on-accent: #fff;
 $color-on-danger: $color-on-accent;
+
+$font-size: 11pt;
