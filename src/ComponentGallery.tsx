@@ -1,5 +1,6 @@
 import React from 'react';
 import { Button, ButtonStyle } from './Button';
+import { TextInput } from './TextInput';
 import './styles/ComponentGallery.scss';
 
 function Gallery(props) {
@@ -31,6 +32,9 @@ export default function ComponentGallery(props) {
                 <Button buttonStyle={ButtonStyle.Primary}>Primary</Button>
                 <Button buttonStyle={ButtonStyle.Secondary}>Secondary</Button>
                 <Button buttonStyle={ButtonStyle.Danger}>Danger</Button>
+            </GalleryRow>
+            <GalleryRow label="Text inputs">
+                <TextInput/>
             </GalleryRow>
         </Gallery>
     );

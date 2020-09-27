@@ -1,0 +1,15 @@
+@import './variables.scss';
+
+input[type=text] {
+    border: none;
+    display: block;
+    box-sizing: border-box;
+    padding: 0.4em 0.4em;
+    border-radius: $corner-radius;
+    box-shadow: $drop-shadow-1;
+    border-bottom: solid 2px transparentize($color: $color-accent, $amount: 0.5);
+
+    &:focus {
+        border-bottom: none;
+    }
+}
