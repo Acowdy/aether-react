@@ -1,13 +1,17 @@
 // Colors
-$color-background: #f4f5f9;
-$color-surface: #fff;
-$color-accent: #651dff;
-$color-accent-gradient: linear-gradient(-22deg, #1d70ff 0%, #d61dff 100%);
-$color-danger: #f02f16;
-$color-on-background: #000;
-$color-on-surface: $color-on-background;
-$color-on-accent: #fff;
-$color-on-danger: $color-on-accent;
+$color-background: #f4f5f9 !default;
+$color-surface: #fff !default;
+$color-accent: #651dff !default;
+$color-accent-gradient: linear-gradient(
+    -22deg,
+    adjust-hue($color-accent, -30deg) 0%,
+    adjust-hue($color-accent, 30deg) 100%
+) !default;
+$color-danger: #f02f16 !default;
+$color-on-background: #000 !default;
+$color-on-surface: $color-on-background !default;
+$color-on-accent: #fff !default;
+$color-on-danger: $color-on-accent !default;
 
 $font-size: 11pt;
 
