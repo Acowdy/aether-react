@@ -6,20 +6,23 @@
     box-sizing: border-box;
 
     >.row {
-        padding-bottom: 2em;
+        padding-bottom: 1.5em;
 
         >.row-header {
             padding-bottom: 0.5em;
             font-size: 16pt;
             font-weight: 500;
+            vertical-align: top;
         }
 
-        >.row-data {
+        >.row-data .row-elements-wrapper {
             display: flex;
             flex-direction: row;
+            flex-wrap: wrap;
             
             >* {
                 margin-right: 0.5rem;
+                margin-bottom: 0.5rem;
             }
         }
     }
@@ -33,7 +36,7 @@
         >.row {
             text-align: right;
             display: table-row;
-            align-items: center;
+            vertical-align: top;
 
             >* {
                 display: table-cell;

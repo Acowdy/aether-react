@@ -18,7 +18,9 @@ function GalleryRow(props) {
                 {props.label}
             </div>
             <div className="row-data">
-                {props.children}
+                <div className="row-elements-wrapper">
+                    {props.children}
+                </div>
             </div>
         </div>
     );
@@ -34,7 +36,9 @@ export default function ComponentGallery(props) {
                 <Button buttonStyle={ButtonStyle.Danger}>Danger</Button>
             </GalleryRow>
             <GalleryRow label="Text inputs">
-                <TextInput/>
+                <div style={{maxWidth: "500px"}}>
+                    <TextInput/>
+                </div>
             </GalleryRow>
         </Gallery>
     );
