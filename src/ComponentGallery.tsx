@@ -54,21 +54,22 @@ export default function ComponentGallery(props) {
                 </Card>
                 <Card width="180px">
                     <CardTitle>
-                        Documents
-                    </CardTitle>
-                </Card>
-                <Card width="180px">
-                    <CardTitle>
                         Title
                     </CardTitle>
                     <CardBody>
                         Body text
                     </CardBody>
                 </Card>
+                <Card width="180px">
+                    <CardTitle>
+                        Documents
+                    </CardTitle>
+                </Card>
                 <Card backgroundImage={image}
                       backgroundImageAltText="Autumn scene"
                       width="180px"
-                      height="180px">
+                      height="180px"
+                      href="https://en.wikipedia.org/wiki/Autumn">
                     <CardTitle>
                         Autumn
                     </CardTitle>

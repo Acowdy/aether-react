@@ -13,7 +13,12 @@
     max-width: 100%;
     height: auto;
     transition: transform 0.2s, box-shadow 0.2s;
-    cursor: pointer;
+    cursor: default;
+
+    &[href] {
+        cursor: pointer;
+        text-decoration: none;
+    }
 
     &:hover {
         transform: scale(1.025);
