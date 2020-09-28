@@ -1,7 +1,9 @@
 import React from 'react';
 import { Button, ButtonStyle } from './Button';
 import { TextInput } from './TextInput';
+import { Card, CardTitle, CardBody } from './Card';
 import './styles/ComponentGallery.scss';
+import image from './autumn.jpg';
 
 function Gallery(props) {
     return (
@@ -39,12 +41,38 @@ export default function ComponentGallery(props) {
                 <Button buttonStyle={ButtonStyle.Danger} disabled>Disabled</Button>
             </GalleryRow>
             <GalleryRow label="Text inputs">
-                <div style={{maxWidth: "500px"}}>
+                <div style={{maxWidth: "250px", width: "100%"}}>
                     <TextInput/>
                 </div>
-                <div style={{maxWidth: "500px"}}>
+                <div style={{maxWidth: "250px", width: "100%"}}>
                     <TextInput disabled/>
                 </div>
+            </GalleryRow>
+            <GalleryRow label="Cards">
+                <Card width="180px">
+                    This is a card!
+                </Card>
+                <Card width="180px">
+                    <CardTitle>
+                        Documents
+                    </CardTitle>
+                </Card>
+                <Card width="180px">
+                    <CardTitle>
+                        Title
+                    </CardTitle>
+                    <CardBody>
+                        Body text
+                    </CardBody>
+                </Card>
+                <Card backgroundImage={image}
+                      backgroundImageAltText="Autumn scene"
+                      width="180px"
+                      height="180px">
+                    <CardTitle>
+                        Autumn
+                    </CardTitle>
+                </Card>
             </GalleryRow>
         </Gallery>
     );

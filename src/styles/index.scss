@@ -20,7 +20,7 @@ body {
 
     :focus {
         outline: solid 3px transparentize($color: $color-accent, $amount: 0.5);
-        -moz-outline-radius: 3px;
+        -moz-outline-radius: $corner-radius;
         border-radius: 0 !important;
     }
 }

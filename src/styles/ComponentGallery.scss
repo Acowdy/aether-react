@@ -19,10 +19,11 @@
             display: flex;
             flex-direction: row;
             flex-wrap: wrap;
+            align-items: flex-start;
             
             >* {
-                margin-right: 0.5rem;
-                margin-bottom: 0.5rem;
+                margin-right: 1rem;
+                margin-bottom: 1rem;
             }
         }
     }
@@ -31,10 +32,9 @@
 @media only screen and (min-width: 768px) {
     .gallery {
         display: table;
-        border-spacing: 1.5em;
+        border-spacing: 2em;
 
         >.row {
-            text-align: right;
             display: table-row;
             vertical-align: top;
 
@@ -46,6 +46,7 @@
                 padding-bottom: 0;
                 width: 1px;
                 white-space: nowrap;
+                text-align: right;
             }
 
             >.row-data {
