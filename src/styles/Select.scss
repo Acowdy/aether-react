@@ -1,0 +1,6 @@
+@import './variables.scss';
+@import './form.scss';
+
+select {
+    @include form-control;
+}

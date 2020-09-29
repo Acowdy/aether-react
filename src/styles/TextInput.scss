@@ -1,23 +1,13 @@
 @import './variables.scss';
+@import './form.scss';
 
 input[type=text] {
-    width: 100%;
-    border: none;
-    display: block;
-    padding: 0.4em 0.4em;
-    border-radius: $corner-radius;
-    box-shadow: $drop-shadow-1;
+    @include form-control;
+
     border-bottom: solid 2px transparentize($color: $color-accent, $amount: 0.4);
-    background-color: $color-surface;
 
     &:focus {
         border-bottom: none;
         margin-bottom: 2px;
-    }
-
-    &[disabled] {
-        box-shadow: none;
-        opacity: 0.7;
-        pointer-events: none;
     }
 }

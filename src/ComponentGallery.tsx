@@ -2,6 +2,7 @@ import React from 'react';
 import { Button, ButtonStyle } from './Button';
 import { TextInput } from './TextInput';
 import { Card, CardTitle, CardBody } from './Card';
+import { Select, SelectItem } from './Select';
 import './styles/ComponentGallery.scss';
 import image from './autumn.jpg';
 
@@ -35,6 +36,16 @@ export default function ComponentGallery(props) {
                 <div style={{maxWidth: "250px", width: "100%"}}>
                     <TextInput disabled/>
                 </div>
+            </GalleryRow>
+
+            <h3>Selects</h3>
+            <GalleryRow>
+                <Select value="N/A">
+                    <SelectItem value="1">One</SelectItem>
+                    <SelectItem value="2">Two</SelectItem>
+                    <SelectItem value="3">Three</SelectItem>
+                    <SelectItem value="N/A">N/A</SelectItem>
+                </Select>
             </GalleryRow>
 
             <h3>Cards</h3>

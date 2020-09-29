@@ -1,0 +1,17 @@
+@import './variables.scss';
+
+@mixin form-control {
+    width: 100%;
+    border: none;
+    display: block;
+    padding: 0.4em 0.4em;
+    border-radius: $corner-radius;
+    box-shadow: $drop-shadow-1;
+    background-color: $color-surface;
+
+    &[disabled] {
+        box-shadow: none;
+        opacity: 0.7;
+        pointer-events: none;
+    }
+}
