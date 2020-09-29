@@ -1,26 +1,14 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './styles/TextInput.scss';
 
-export class TextInput extends React.Component<{disabled?: boolean}, {value: string}> {
-    constructor(props) {
-        super(props);
-        this.state = {value: ""};
-
-        this.handleChange = this.handleChange.bind(this);
-    }
-
-    handleChange(event) {
-        this.setState({value: event.target.value});
-    }
-
-    render() {
-        return (
-            <input
-                type="text"
-                value={this.state.value}
-                onChange={this.handleChange}
-                disabled={this.props.disabled}
-                />
-        );
-    }
+export function TextInput(props: {disabled?: boolean}) {
+    const [value, setValue] = useState("");
+    return (
+        <input
+            type="text"
+            value={value}
+            onChange={event => setValue(event.target.value)}
+            disabled={props.disabled}
+            />
+    );
 }
