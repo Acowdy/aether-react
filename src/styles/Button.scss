@@ -49,6 +49,10 @@
 
 .button-primary {
     @include button($color-on-accent, $color-accent, $color-accent-gradient);
+
+    &:active {
+        background: $color-accent-gradient-active;
+    }
 }
 
 .button-danger {

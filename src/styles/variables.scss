@@ -2,12 +2,20 @@
 $color-background: #f4f5f9 !default;
 $color-surface: #fff !default;
 $color-accent: #651dff !default;
+$color-accent-analogous-1: adjust-hue($color-accent, -30deg) !default;
+$color-accent-analogous-2: adjust-hue($color-accent, 30deg) !default;
 $color-accent-gradient: linear-gradient(
     -22deg,
-    adjust-hue($color-accent, -30deg) 0%,
-    adjust-hue($color-accent, 30deg) 100%
+    $color-accent-analogous-1 0%,
+    $color-accent-analogous-2 100%
+) !default;
+$color-accent-gradient-active: linear-gradient(
+    -22deg,
+    darken($color-accent-analogous-1, 10) 0%,
+    darken($color-accent-analogous-2, 10) 100%
 ) !default;
 $color-danger: #f02f16 !default;
+
 $color-on-background: #000 !default;
 $color-on-surface: $color-on-background !default;
 $color-on-accent: #fff !default;
