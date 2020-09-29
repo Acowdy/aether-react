@@ -12,18 +12,7 @@
     width: 100%;
     max-width: 100%;
     height: auto;
-    transition: transform 0.2s, box-shadow 0.2s;
     cursor: default;
-
-    &[href] {
-        cursor: pointer;
-        text-decoration: none;
-    }
-
-    &:hover {
-        transform: scale(1.025);
-        box-shadow: $drop-shadow-2;
-    }
 
     &.card-image {
         color: $color-on-image;
@@ -56,5 +45,16 @@
         position: relative;
         z-index: 2;
         font-size: $font-size - 1pt;
+    }
+}
+
+a.card {
+    cursor: pointer;
+    text-decoration: none;
+    transition: transform 0.2s, box-shadow 0.2s;
+
+    &:hover {
+        transform: scale(1.025);
+        box-shadow: $drop-shadow-2;
     }
 }
