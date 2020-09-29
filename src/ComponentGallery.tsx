@@ -75,6 +75,18 @@ export default function ComponentGallery(props) {
 
                 <p>In hac habitasse platea dictumst. Nulla facilisi. Sed sed sapien neque. Suspendisse finibus est eros, at vehicula nibh semper eu. Donec gravida, quam nec pellentesque fermentum, libero est porta velit, ac aliquam metus ligula nec ligula. Maecenas commodo bibendum purus, a ornare nulla sodales eu. Aliquam maximus efficitur nisl sit amet cursus. Morbi ligula nisi, elementum at pulvinar et, tincidunt quis lorem. Mauris nec magna id eros iaculis imperdiet et at augue. Nam augue neque, dignissim ut neque nec, dapibus pulvinar orci. Mauris blandit magna augue, varius malesuada quam tincidunt et. Etiam porttitor lacus id odio vulputate vulputate.</p>
             </article>
+
+            <article className="article-centered">
+                <h2>Centered article</h2>
+                
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Praesent tristique magna sit amet purus. Urna id volutpat lacus laoreet. Dictum varius duis at consectetur lorem donec massa sapien. Adipiscing elit pellentesque habitant morbi tristique. Morbi tristique senectus et netus et malesuada. Ut tellus elementum sagittis vitae. Feugiat in ante metus dictum at tempor. Eget est lorem ipsum dolor sit amet consectetur adipiscing. Aliquet risus feugiat in ante metus dictum at tempor commodo. Condimentum vitae sapien pellentesque habitant morbi tristique senectus. Convallis tellus id interdum velit laoreet id donec. Vel eros donec ac odio tempor orci. Ornare aenean euismod elementum nisi. Bibendum est ultricies integer quis. Urna duis convallis convallis tellus id interdum. Tempor id eu nisl nunc mi ipsum faucibus. Vel orci porta non pulvinar neque laoreet suspendisse. Vel elit scelerisque mauris pellentesque.</p>
+
+                <p>Nec sagittis aliquam malesuada bibendum arcu vitae elementum curabitur. Vehicula ipsum a arcu cursus vitae congue. In dictum non consectetur a. Ultrices neque ornare aenean euismod elementum nisi quis eleifend quam. Bibendum est ultricies integer quis auctor elit sed vulputate mi. Sagittis nisl rhoncus mattis rhoncus. Sit amet consectetur adipiscing elit duis. Cursus mattis molestie a iaculis at. Accumsan lacus vel facilisis volutpat est velit egestas dui. Nunc sed id semper risus. Morbi tristique senectus et netus et malesuada fames. Tristique senectus et netus et malesuada. Porta lorem mollis aliquam ut porttitor leo. Viverra orci sagittis eu volutpat.</p>
+
+                <h3>Sub-heading</h3>
+
+                <p>Massa tincidunt dui ut ornare lectus sit. Orci dapibus ultrices in iaculis nunc sed augue lacus. Sollicitudin aliquam ultrices sagittis orci a scelerisque purus semper eget. Semper auctor neque vitae tempus quam pellentesque. Ultrices mi tempus imperdiet nulla malesuada pellentesque elit. Vel turpis nunc eget lorem dolor. Amet est placerat in egestas erat imperdiet sed. Nisi porta lorem mollis aliquam. Tempus urna et pharetra pharetra. Sociis natoque penatibus et magnis dis parturient montes nascetur. A lacus vestibulum sed arcu non odio euismod lacinia.</p>
+            </article>
         </div>
     );
 }

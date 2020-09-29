@@ -67,4 +67,9 @@ article {
     width: 35em;
     margin: 0;
     padding: 0;
+
+    &.article-centered {
+        margin-left: auto;
+        margin-right: auto;
+    }
 }
