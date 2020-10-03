@@ -1,6 +1,6 @@
 @import './variables.scss';
 
-@mixin button($color-fg, $color-bg, $bg: $color-bg) {
+@mixin button($color-fg, $color-bg) {
     font-size: $font-size - 1pt;
     text-transform: uppercase;
     letter-spacing: 0.04em;
@@ -12,7 +12,7 @@
     border-radius: $corner-radius;
     cursor: pointer;
 
-    background: $bg;
+    background-color: $color-bg;
     color: $color-fg;
 
     border: none;
@@ -43,21 +43,17 @@
 }
 
 .button {
-    @include button($color-accent, $color-surface);
+    @include button($color-light-accent, $color-light-surface);
 }
 
 .button-primary {
-    @include button($color-on-accent, $color-accent, $color-accent-gradient);
-
-    &:active {
-        background: $color-accent-gradient-active;
-    }
+    @include button($color-light-on-accent, $color-light-accent);
 }
 
 .button-danger {
-    @include button($color-danger, $color-surface);
+    @include button($color-light-danger, $color-light-surface);
 
     &:focus {
-        outline: solid 3px transparentize($color: $color-danger, $amount: 0.5);
+        outline: solid 3px transparentize($color: $color-light-danger, $amount: 0.3);
     }
 }

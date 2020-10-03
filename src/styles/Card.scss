@@ -2,8 +2,8 @@
 
 .card {
     box-shadow: $drop-shadow-1;
-    background-color: $color-surface;
-    color: $color-on-surface;
+    background-color: $color-light-surface;
+    color: $color-light-on-surface;
     border-radius: $corner-radius;
     border: none;
     padding: 1em 1em;
@@ -14,7 +14,7 @@
     cursor: default;
 
     &.card-image {
-        color: $color-on-image;
+        color: $color-light-on-image;
     }
 
     img.background-image {
@@ -33,7 +33,7 @@
         position: relative;
         z-index: 2;
         font-weight: 500;
-        font-size: $font-size + 1pt;
+        font-size: $font-size + 2pt;
 
         &:not(:last-child) {
             padding-bottom: 0.5em;
@@ -43,7 +43,6 @@
     &>.card-body {
         position: relative;
         z-index: 2;
-        font-size: $font-size - 1pt;
     }
 }
 

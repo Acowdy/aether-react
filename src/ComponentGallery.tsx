@@ -40,12 +40,14 @@ export default function ComponentGallery(props) {
 
             <h3>Selects</h3>
             <GalleryRow>
-                <Select value="N/A">
-                    <SelectItem value="1">One</SelectItem>
-                    <SelectItem value="2">Two</SelectItem>
-                    <SelectItem value="3">Three</SelectItem>
-                    <SelectItem value="N/A">N/A</SelectItem>
-                </Select>
+                <div style={{maxWidth: "200px", width: "100%"}}>
+                    <Select value="N/A">
+                        <SelectItem value="1">One</SelectItem>
+                        <SelectItem value="2">Two</SelectItem>
+                        <SelectItem value="3">Three</SelectItem>
+                        <SelectItem value="N/A">N/A</SelectItem>
+                    </Select>
+                </div>
             </GalleryRow>
 
             <h3>Cards</h3>

@@ -3,4 +3,7 @@
 
 select {
     @include form-control;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
 }

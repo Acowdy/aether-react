@@ -3,11 +3,4 @@
 
 input[type=text] {
     @include form-control;
-
-    border-bottom: solid 2px transparentize($color: $color-accent, $amount: 0.4);
-
-    &:focus {
-        border-bottom: none;
-        margin-bottom: 2px;
-    }
 }

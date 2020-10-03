@@ -1,31 +1,18 @@
-// Colors
-$color-background: #f4f5f9 !default;
-$color-surface: #fff !default;
-$color-accent: #651dff !default;
-$color-accent-analogous-1: adjust-hue($color-accent, -30deg) !default;
-$color-accent-analogous-2: adjust-hue($color-accent, 30deg) !default;
-$color-accent-gradient: linear-gradient(
-    -22deg,
-    $color-accent-analogous-1 0%,
-    $color-accent-analogous-2 100%
-) !default;
-$color-accent-gradient-active: linear-gradient(
-    -22deg,
-    darken($color-accent-analogous-1, 10) 0%,
-    darken($color-accent-analogous-2, 10) 100%
-) !default;
-$color-danger: #f02f16 !default;
-
-$color-on-background: #000 !default;
-$color-on-surface: $color-on-background !default;
-$color-on-accent: #fff !default;
-$color-on-danger: $color-on-accent !default;
-$color-on-image: #fff;
+// Light mode colors
+$color-light-background: #eff1f7 !default;
+$color-light-surface: #fff !default;
+$color-light-accent: #1472ff !default;
+$color-light-danger: #f02f16 !default;
+$color-light-on-background: #000 !default;
+$color-light-on-surface: $color-light-on-background !default;
+$color-light-on-accent: #fff !default;
+$color-light-on-danger: $color-light-on-accent !default;
+$color-light-on-image: #fff;
 
 $font-size: 11pt;
 
-$drop-shadow-1: 0 2px 4px #0002;
-$drop-shadow-2: 0 5px 10px #0002;
+$drop-shadow-1: 0 1px 2px #0004;
+$drop-shadow-2: 0 4px 8px #00000028;
 
 $corner-radius: 3px;
 

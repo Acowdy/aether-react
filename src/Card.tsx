@@ -1,5 +1,4 @@
 import React from 'react';
-import { JsxEmit } from 'typescript';
 import './styles/Card.scss';
 
 export function CardTitle({children}: {children?: React.ReactNode}) {

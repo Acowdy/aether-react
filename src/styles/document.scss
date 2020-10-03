@@ -9,8 +9,8 @@ body {
         sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    background-color: $color-background;
-    color: $color-on-background;
+    background-color: $color-light-background;
+    color: $color-light-on-background;
     width: 100%;
 }
 
@@ -19,7 +19,7 @@ body {
     color: inherit;
 
     :focus {
-        outline: solid 3px transparentize($color: $color-accent, $amount: 0.5);
+        outline: solid 3px transparentize($color: $color-light-accent, $amount: 0.3);
         -moz-outline-radius: $corner-radius;
         border-radius: 0 !important;
     }
