@@ -20,12 +20,12 @@
 
     transition: 
         box-shadow $transition-time,
-        transform $transition-time,
         background-color $transition-time,
         color $transition-time;
 
     &:hover {
-        box-shadow: $drop-shadow-2;
+        color: mix($color-fg, $color-bg, 92);
+        background-color: mix($color-bg, $color-fg, 92);
     }
 
     &:active {
